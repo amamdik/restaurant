@@ -1,0 +1,8 @@
+.button-pane{
+    -fx-background-color: linear-gradient(to left,#135484,transparent);
+}
+.btn{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, #000,20,0.1,0,0);
+}

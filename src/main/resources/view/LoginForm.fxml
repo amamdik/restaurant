@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="523.0" prefWidth="791.0" styleClass="txt-fid" stylesheets="@../style/LoginForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.LoginFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#135484" height="553.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="373.0" />
+      <Text fill="WHITE" layoutX="79.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STARBEANS" underline="true">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+      <JFXTextField alignment="CENTER" focusColor="#464547" layoutX="53.0" layoutY="185.0" prefHeight="25.0" prefWidth="253.0" promptText="User Name" styleClass="txt-fid" unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <JFXPasswordField alignment="CENTER" focusColor="#464547" layoutX="53.0" layoutY="277.0" prefHeight="25.0" prefWidth="253.0" promptText="Password" styleClass="txt-fid" unFocusColor="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></JFXPasswordField>
+      <JFXButton layoutX="108.0" layoutY="382.0" onAction="#loginOnAction" prefHeight="39.0" prefWidth="142.0" styleClass="login-button" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></JFXButton>
+      <Text fill="WHITE" layoutX="53.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to STARBEANS" textAlignment="CENTER" wrappingWidth="252.99999552965164">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+      <ImageView fitHeight="553.0" fitWidth="418.0" layoutX="373.0" layoutY="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/loginpage.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

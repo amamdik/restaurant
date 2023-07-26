@@ -1,0 +1,24 @@
+.txt-fid{
+    -fx-border-color: #ffff;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fff;
+    -fx-prompt-text-fill: #ffff;
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+}
+.login-button{
+    -fx-background-radius: 50;
+
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+    -fx-text-fill: black;
+    -fx-background-color: #fff;
+}
+.login-button:hover{
+    -fx-background-radius: 50;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+    -fx-text-fill: #fff;
+    -fx-background-color: #268aed;
+}

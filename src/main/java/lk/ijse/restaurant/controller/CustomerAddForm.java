@@ -1,0 +1,18 @@
+package lk.ijse.restaurant.controller;
+
+import com.jfoenix.controls.JFXButton;
+import javafx.event.ActionEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+
+public class CustomerAddForm {
+
+    public Pane mainAnchorPane;
+    public JFXButton btnClose;
+
+    public void btnCloseOnAction(ActionEvent actionEvent) {
+        Stage window = (Stage) btnClose.getScene().getWindow();
+        window.close();
+    }
+}

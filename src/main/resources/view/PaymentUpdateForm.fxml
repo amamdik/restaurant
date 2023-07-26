@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="300.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.PaymentUpdateForm">
+    <children>
+        <Pane fx:id="mainAnchorPane" prefHeight="568.0" prefWidth="1300.0" style="-fx-border-width: 20; -fx-border-color: #6b7e94;">
+            <children>
+                <ImageView fitHeight="39.0" fitWidth="45.0" layoutX="1223.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/delete_icon.png" />
+                    </image>
+                </ImageView>
+                <JFXButton fx:id="btnClose" layoutX="1222.0" layoutY="26.0" onAction="#btnCloseOnAction" opacity="0.13" prefHeight="39.0" prefWidth="39.0" style="-fx-background-color: white;" />
+                <JFXTextField alignment="CENTER" layoutX="84.0" layoutY="191.0" prefHeight="46.0" prefWidth="469.0" promptText="ID" style="-fx-background-color: #d3d9df; -fx-background-radius: 20px;" unFocusColor="BLACK">
+                    <font>
+                        <Font name="Times New Roman" size="14.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField alignment="CENTER" layoutX="732.0" layoutY="191.0" prefHeight="46.0" prefWidth="469.0" promptText="ID" style="-fx-background-color: #d3d9df; -fx-background-radius: 20px;" unFocusColor="BLACK">
+                    <font>
+                        <Font name="Times New Roman" size="14.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField alignment="CENTER" layoutX="416.0" layoutY="365.0" prefHeight="46.0" prefWidth="469.0" promptText="Payment" style="-fx-background-color: #d3d9df; -fx-background-radius: 20px;" unFocusColor="BLACK">
+                    <font>
+                        <Font name="Times New Roman" size="14.0" />
+                    </font>
+                </JFXTextField>
+                <Text layoutX="257.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PaymentID">
+                    <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                    </font>
+                </Text>
+                <Text layoutX="910.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OrderID">
+                    <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                    </font>
+                </Text>
+                <Text layoutX="591.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Payment">
+                    <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                    </font>
+                </Text>
+                <JFXButton layoutX="1104.0" layoutY="481.0" style="-fx-background-color: #6b7e94; -fx-background-radius: 30px;" text="UPDATE" textFill="WHITE">
+                    <font>
+                        <Font name="Times New Roman Bold" size="30.0" />
+                    </font>
+                </JFXButton>
+                <JFXTextField alignment="CENTER" layoutX="295.0" layoutY="42.0" prefHeight="46.0" prefWidth="736.0" promptText="Search" style="-fx-border-color: black; -fx-border-radius: 20; -fx-border-width: 3;">
+                    <font>
+                        <Font name="Times New Roman" size="15.0" />
+                    </font>
+                </JFXTextField>
+                <ImageView fitHeight="28.0" fitWidth="54.0" layoutX="318.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/search_icon.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

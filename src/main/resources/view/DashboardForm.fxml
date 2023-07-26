@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1009.0" prefWidth="1910.0" stylesheets="@../style/DashBoardForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.DashboardFormController">
+   <children>
+      <Pane fx:id="MainPane" layoutX="420.0" layoutY="-1.0" prefHeight="1008.0" prefWidth="1492.0">
+         <children>
+            <Pane layoutX="950.0" layoutY="445.0" prefHeight="498.0" prefWidth="445.0" style="-fx-background-color: #c2c7cb;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="142.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/customer_icon.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="94.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mr. Gamage" textAlignment="CENTER" wrappingWidth="263.9805040359497">
+                     <font>
+                        <Font name="Times New Roman Bold" size="48.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="178.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+                     <font>
+                        <Font name="Times New Roman Bold" size="33.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+         </children></Pane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c2c7cb" height="492.0" layoutX="468.0" layoutY="447.0" stroke="#c2c7cb" strokeType="INSIDE" width="876.0" />
+      <AnchorPane prefHeight="1009.0" prefWidth="420.0" styleClass="button-pane">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="79.0" layoutY="203.0" prefHeight="64.0" prefWidth="252.0" ripplerFill="WHITE" styleClass="btn" text="Button" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <GridPane prefHeight="75.0" prefWidth="252.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="90.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="162.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="16.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="HOME" wrappingWidth="169.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="46.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../img/home_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="78.0" layoutY="291.0" onAction="#btnCustomerOnAction" prefHeight="64.0" prefWidth="252.0" ripplerFill="WHITE" styleClass="btn" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <GridPane prefHeight="75.0" prefWidth="252.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="88.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="164.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="16.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER" wrappingWidth="169.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="46.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../img/customer_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="77.0" layoutY="380.0" onAction="#btnEmployeeOnAction" prefHeight="64.0" prefWidth="252.0" ripplerFill="WHITE" styleClass="btn" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <GridPane prefHeight="75.0" prefWidth="252.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="90.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="162.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="16.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="EMPLOYEE" wrappingWidth="169.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="46.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../img/131-1319878_employee-self-serve-portal-people-icon-png.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="77.0" layoutY="468.0" onAction="#btnOrderOnAction" prefHeight="64.0" prefWidth="252.0" ripplerFill="WHITE" styleClass="btn" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <GridPane prefHeight="75.0" prefWidth="252.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="92.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="160.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="16.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ORDERS" wrappingWidth="169.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="46.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../img/order_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="75.0" layoutY="556.0" onAction="#btnPaymentOnAction" prefHeight="64.0" prefWidth="252.0" ripplerFill="WHITE" styleClass="btn" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <GridPane prefHeight="75.0" prefWidth="252.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="96.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="156.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="16.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PAYMENT" wrappingWidth="169.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="46.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../img/payment_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="75.0" layoutY="646.0" onAction="#btnSalaryOnAction" prefHeight="64.0" prefWidth="252.0" ripplerFill="WHITE" styleClass="btn" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <GridPane prefHeight="75.0" prefWidth="252.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="94.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="158.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="16.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SALARY" wrappingWidth="169.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="46.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../img/salary_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="75.0" layoutY="733.0" onAction="#btnStockOnAction" prefHeight="64.0" prefWidth="252.0" ripplerFill="WHITE" styleClass="btn" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <GridPane prefHeight="75.0" prefWidth="252.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="95.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="157.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="16.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="STOCK" wrappingWidth="169.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="46.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../img/stock_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="75.0" layoutY="821.0" prefHeight="64.0" prefWidth="252.0" ripplerFill="WHITE" styleClass="btn" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <GridPane prefHeight="75.0" prefWidth="252.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="92.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="160.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="16.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SUPPLIER" wrappingWidth="169.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="46.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../img/supplier_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="74.0" layoutY="908.0" prefHeight="64.0" prefWidth="252.0" ripplerFill="WHITE" styleClass="btn" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <GridPane prefHeight="75.0" prefWidth="252.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="94.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="158.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="16.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SUPPLIER ORDER" wrappingWidth="169.13671875" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="46.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../img/supplier_order_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <ImageView fitHeight="98.0" fitWidth="94.0" layoutX="149.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <Label layoutX="1660.0" layoutY="35.0" text="09.30 AM">
+         <font>
+            <Font name="Times New Roman Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="1685.0" layoutY="99.0" text="Mon , 04 April">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="468.0" layoutY="172.0" prefHeight="233.0" prefWidth="1346.0" style="-fx-background-color: #c2c7cb;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#135484" height="200.0" layoutX="18.0" layoutY="17.0" stroke="#135484" strokeType="INSIDE" width="420.0" />
+            <ImageView fitHeight="87.0" fitWidth="94.0" layoutX="47.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/131-1319878_employee-self-serve-portal-people-icon-png.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="145.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No of Customers">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="353.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="45.00000274181366">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#135484" height="200.0" layoutX="459.0" layoutY="18.0" stroke="#135484" strokeType="INSIDE" width="420.0" />
+            <ImageView fitHeight="73.0" fitWidth="94.0" layoutX="489.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/images.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="601.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Today's income">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="754.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 0" wrappingWidth="89.18226566165686">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#135484" height="200.0" layoutX="899.0" layoutY="18.0" stroke="#135484" strokeType="INSIDE" width="420.0" />
+            <ImageView fitHeight="79.0" fitWidth="89.0" layoutX="926.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/470-4701555_income-transparent-background-high-income-icon-png-png.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="1052.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total income">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="1182.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rs. 0" wrappingWidth="89.18226566165686">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <LineChart layoutX="468.0" layoutY="512.0" prefHeight="400.0" prefWidth="863.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Text layoutX="591.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No.of Orders Chart">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="#135484" layoutX="468.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STARBEANS RESTAURANT">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="36.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
